@@ -55,7 +55,7 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
 
-  apps/payload:
+  apps/web:
     dependencies:
       '@payloadcms/db-postgres':
         specifier: 3.62.1
@@ -139,43 +139,6 @@ importers:
       vitest:
         specifier: 3.2.3
         version: 3.2.3(@types/debug@4.1.12)(@types/node@22.15.3)(jsdom@26.1.0(bufferutil@4.0.9)(utf-8-validate@6.0.5))(sass@1.77.4)(tsx@4.20.6)(yaml@1.10.2)
-
-  apps/web:
-    dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      next:
-        specifier: ^16.0.0
-        version: 16.0.0(@playwright/test@1.54.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(sass@1.77.4)
-      react:
-        specifier: ^19.2.0
-        version: 19.2.0
-      react-dom:
-        specifier: ^19.2.0
-        version: 19.2.0(react@19.2.0)
-    devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@types/node':
-        specifier: ^22.15.3
-        version: 22.15.3
-      '@types/react':
-        specifier: 19.2.2
-        version: 19.2.2
-      '@types/react-dom':
-        specifier: 19.2.2
-        version: 19.2.2(@types/react@19.2.2)
-      eslint:
-        specifier: ^9.39.1
-        version: 9.39.1
-      typescript:
-        specifier: 5.9.2
-        version: 5.9.2
 
   packages/eslint-config:
     devDependencies:
